@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obah Emmanuel's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+           </nav> 
+           <div class="header-text">
+            <p>Aspiring Cyber security Engineer</p>
+            <h1>Hello there,<br> I'm <span>Obah Emmanuel</span></h1> 
+           </div>
+        </div>
+
+    </div>
+
+ <!-- --------------------About Me--------------------------- -->   
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
+                    <p>Hi, I'm Obah Emmanuel, and I'm interested in cybersecurity. As such, I've taken time to learn fundamental security concepts and networking basics, study system security architecture, and carry out hands-on projects no matter how elementary. I'm particularly interested in the security architecture domain, learning how security systems are designed and improved to keep up with the latest threats. I also enjoy researching security-related topics and exploring new threats and vulnerabilities.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('What I do')">What I do</p>
+                        <p class="tab-links" onclick="opentab('Mission')">Mission</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Security Architecture</span><br>Building Secure Digital Architecture</li>
+                            <li><span>Networking</span><br>Understanding Network Protocols and Security</li>
+                            <li><span>Python</span><br>Learning Python for scripting/automation and developing my own proprietary security tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="What I do">
+                        <ul>
+                            <li><span>Security Research</span><br>I perform research on security vulnerabilities, emerging threats, and the latest security tools, and analyzing how they work and how they can be used effectively.</li>
+                            <li><span>Blog Posts</span><br>I create write-ups on security architecture, security concepts, and insights from my projects, and contribute to the infosec community through educational content.</li>
+                            <li><span>Cybersecurity Labs</span><br>I work on hands-on security projects using tools like Wazuh, Suricata, Nmap, and Metasploit, and document everything in detail on GitHub.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Mission">
+                        <ul>
+                            <li><span>Build for the Future</span><br>Prepare for a career in cybersecurity and cloud by working on real tools, earning certifications, and pursuing impactful internships.</li>
+                            <li><span>Gain Experience Through Projects</span><br>Focus on practical, project-based learning to develop skills in malware analysis, cloud security, and threat detection.</li>
+                            <li><span>Build Early Foundations</span><br> Prepare for a career in cybersecurity and cloud by working on real tools, earning certifications, and pursuing impactful internships</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------Projects--------------------------- -->
+    <div id="Skills">
+        <div class="container">
+            <h1 class ="sub-title">Skills and Experience</h1>
+            <div class="Skills-list">
+                <div>
+                    <i class="fas fa-network-wired"></i>
+                    <h2></i> Scripting & Programming</h2>
+                    <p>Experience in automating tasks using Bash scripts and Python. Familiar with building basic security tools with python.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- Cloud security -->
+                <div>
+                    <i class="fas fa-shield-alt"></i>
+                    <h2></i> Cloud Computing</h2>
+                    <p>Hands-on experience with AWS and Azure services, including EC2, S3, and Azure Virtual Machines..</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- Network Security with Suricata -->
+                <div>
+                    <i class="fas fa-lock"></i> 
+                    <h2>Cybersecurity</h2>
+                    <p>Proficient in Identity and Access Management (IAM), threat detection, and security monitoring using tools like Wazuh and Wireshark.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Projects--------------- -->
+     <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="Project-list">
+                <div class="Project">
+                    <img src="images/project1.jpg">
+                    <div class="layer">
+                        <h3>Network security with suricata</h3>
+                        <p>Deployed Suricata as a network intrusion detection system (NIDS) to monitor and analyze network traffic. Configured rules to detect malicious activity and generate actionable alerts.</p>
+                        <a  href="#"></a>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="images/project2.jpg">
+                    <div class="layer">
+                        <h3>Wazuh-security lab</h3>
+                        <p>Deployed Suricata as a network intrusion detection system (NIDS) to monitor and analyze network traffic. Configured rules to detect malicious activity and generate actionable alerts.</p>
+                        <a  href="#"></a>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img src="images/project3.jpg">
+                    <div class="layer">
+                        <h3>Network security</h3>
+                        <p>Deployed Suricata as a network intrusion detection system (NIDS) to monitor and analyze network traffic. Configured rules to detect malicious activity and generate actionable alerts.</p>
+                        <a  href="#"></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- -----------contact--------------- -->
+      <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> eobah105@gmail.com</p>
+                <p><i class="fas fa-phone"></i>+234 9124081474</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/emmanuel-obah-8a0521333/"><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+                <a href="images/Obah Emmanuel's Resume .pdf" download class="btn btn2">Download resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Created by Obah Emmanuel</p>
+      </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
